@@ -137,7 +137,7 @@ function renderPara (para, defaults) {
     if (para.style[item] != null) pdefaults[item] = para.style[item]
   }
   const paraTag = defaults.paraTag
-  return `${tags.open}${para.content.map(span => renderSpan(span, pdefaults)).join('')}${tags.close}\n\n`
+  return `${tags.open}${para.content.map(span => renderSpan(span, pdefaults)).join('')}${tags.close}`
 }
 
 function renderSpan (span, defaults) {
